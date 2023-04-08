@@ -17,7 +17,7 @@ const Shop = () => {
         const storedCart = getShoppingCart();
         const savedCart = [];
         // STEP 1; Get id of the addedProduct 
-        for(const id in products) {
+        for(const id in storedCart) {
             // STEP 2: Get the product from products state by using id
             const addedProduct = products.find(product => product.id === id);
             if(addedProduct) {
