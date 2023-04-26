@@ -6,9 +6,10 @@ const cartProductsLoader =async()=> {
 
     // if cart data is in database, you have to use async await
     const storedCard = getShoppingCart();
+
     const savedCart = [];
 
-    console.log(storedCard);
+    // console.log(storedCard);
     for(const id in storedCard) {
         const addedProduct = products.find(pd => pd.id === id);
         if(addedProduct) {
@@ -17,6 +18,10 @@ const cartProductsLoader =async()=> {
             savedCart.push(addedProduct);
         }
     }
+    // if you need to send two things
+    // return [product,savedCart]
+    // another option
+    // return {product,savedCart};
 
    return savedCart;
 }
