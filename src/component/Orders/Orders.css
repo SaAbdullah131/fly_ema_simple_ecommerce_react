@@ -2,3 +2,21 @@
 .review-container {
      margin: 50px auto;
 }
+.btn-proceed {
+     background:#FF9900;
+     width: 90%;
+     height: 56px;
+     font-size: 21px;
+     margin-bottom: 10px auto;
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     border-radius: 4px;
+     color: white;
+     
+ }
+
+ .proceed-link {
+     text-decoration: none;
+    
+ }
